@@ -1,0 +1,11 @@
+extend layout
+
+block content
+    h1=title
+    div
+        ul
+          each obj in genre_list
+            li 
+              a(href=obj.url) #{obj.name} 
+          else
+            li there are no genre's
